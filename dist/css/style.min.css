@@ -237,4 +237,78 @@ body {
   max-width: 368px;
   margin-top: 21px;
 }
+
+.third-section .title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243D;
+  margin-top: 15px;
+}
+
+.featured-works .works {
+  display: flex;
+  margin-top: 22px;
+}
+
+.featured-works .lines-1 {
+  width: 100%;
+  border: 1px solid #E0E0E0;
+  height: 0;
+  display: inline-block;
+}
+
+.featured-works .works .work-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-works .works .work-info h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  color: #21243D;
+}
+
+.featured-works .works .work-info .info {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.featured-works .works .work-info .info .date {
+  background: #142850;
+  border-radius: 16px;
+  margin-right: 26px;
+}
+
+.featured-works .works .work-info .info .date p {
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 29px;
+  padding: 0px 10px 0;
+}
+
+.featured-works .works .work-info .info .avtor {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #8695A4;
+}
+
+.featured-works .works .work-info .info .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243D;
+}
+
+.featured-works .works .work-info .text {
+  margin-top: 17px;
+}
+
+.featured-works .works img {
+  margin-right: 18px;
+}
 /*# sourceMappingURL=style.min.css.map */
