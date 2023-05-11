@@ -65,14 +65,14 @@ gulp.task('img-svg', function() {
 //html task
 gulp.task('html', function() {
     return gulp.src('./src/html/index.html')
-      .pipe(htmlmin({ collapseWhitespace: true }))
+    //   .pipe(htmlmin({ collapseWhitespace: true }))
       .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('dist/html/'))
+      .pipe(gulp.dest('dist/'))
   });
 //--------------------
   //watcher
   gulp.task('watch', function() {
-      gulp.watch('./*.html',gulp.series('html'));
+      gulp.watch('./src/html/*.html',gulp.series('html'));
       gulp.watch('./src/scss/*.scss',gulp.series('css'));
       gulp.watch('./src/img/*.jpg',gulp.series('img'));
       gulp.watch('./src/img/*.png',gulp.series('img-png'));

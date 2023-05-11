@@ -39,11 +39,202 @@ body {
   line-height: 1;
   font-size: 16px;
   color: #000;
+  font-family: "Heebo";
 }
 
-h1 {
-  font-size: large;
+.header-container {
+  max-width: 1035px;
+  padding: 0 15px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.header .menu {
+  justify-content: end;
+  display: flex;
+  padding: 26px 0;
+}
+
+.header .menu .menu-list {
+  display: flex;
+}
+
+.header .menu .menu-list .menu-item {
+  margin-right: 33px;
+}
+
+.header .menu .menu-list .menu-item:last-child {
+  margin-right: 0px;
+}
+
+.header .menu .menu-list .menu-item a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease 0s;
+}
+
+.header .menu .menu-list .menu-item:hover a {
+  color: #FF6464;
+}
+
+.main {
+  margin-top: 46px;
+}
+
+.container {
+  max-width: 856px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+.first-section .author-block {
+  display: flex;
+  padding: 76px 0;
+}
+
+.first-section .author-block .author-content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+}
+
+.first-section .author-block .author-content h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+  color: rgb(33, 36, 61);
+  margin-top: 12px;
+}
+
+.first-section .author-block .author-content p {
+  font-size: 16px;
   font-weight: 400;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(33, 36, 61);
+  line-height: 24px;
+  margin-top: 30px;
+  font-family: "Heebo";
+}
+
+.first-section .author-block .author-content .button {
+  margin-top: 33px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: rgb(255, 255, 255);
+  min-height: 47px;
+  max-width: 208px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 100, 100);
+  border-radius: 2px;
+  transition: all 0.4s ease 0s;
+  border: 1px solid transparent;
+}
+
+.first-section .author-block .author-content .button:hover {
+  color: rgb(255, 100, 100);
+  background: rgb(255, 255, 255);
+  border-color: rgb(255, 100, 100);
+}
+
+.second-section {
+  background-color: #EDF7FA;
+  padding: 7px 0px 32px;
+}
+
+.second-section .main-content .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-section .main-content .head h5 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243D;
+}
+
+.second-section .main-content .head a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00A8CC;
+}
+
+.second-section .main-content .head a:hover {
+  text-decoration: underline;
+}
+
+.main-content .post-main {
+  display: flex;
+}
+
+.main-content .post-main .post {
+  padding: 23px 21px 23px 21px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 418px;
+}
+
+.main-content .post-main .post .top-block {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+.main-content .post-main .post.first {
+  margin-right: 10px;
+}
+
+.main-content .post-main .post.second {
+  margin-left: 10px;
+}
+
+.main-content .post-main .post .center-block {
+  display: flex;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.main-content .post-main .post .line {
+  height: 21px;
+  border: 1px solid #000000;
+}
+
+.main-content .post-main .post .center-block .date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #21243D;
+}
+
+.main-content .post-main .post .center-block p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #21243D;
+}
+
+.main-content .post-main .post .center-block .date {
+  margin-right: 26px;
+}
+
+.main-content .post-main .post .center-block .info {
+  margin-left: 26px;
+}
+
+.main-content .post-main .post .bottom-block {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243D;
+  max-width: 368px;
+  margin-top: 21px;
 }
 /*# sourceMappingURL=style.min.css.map */
