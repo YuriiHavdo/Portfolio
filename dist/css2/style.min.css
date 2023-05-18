@@ -1,0 +1,26 @@
+/* HEADER */
+.body .header .menu {
+  justify-content: end;
+  display: flex;
+  padding: 26px 0;
+}
+.body .header .menu .menu-list {
+  display: flex;
+}
+.body .header .menu .menu-list .menu-item {
+  margin-right: 33px;
+}
+.body .header .menu .menu-list .menu-item:last-child {
+  margin-right: 0px;
+}
+.body .header .menu .menu-list .menu-item a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease 0s;
+}
+.body .header .menu .menu-list .menu-item:hover a {
+  color: #FF6464;
+}
+/*# sourceMappingURL=style.min.css.map */

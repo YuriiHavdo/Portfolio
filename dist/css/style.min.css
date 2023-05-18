@@ -32,7 +32,6 @@ h6 {
   font-weight: inherit;
   font-size: inherit;
 }
-
 html,
 body {
   height: 100%;
@@ -42,6 +41,7 @@ body {
   font-family: "Heebo";
 }
 
+/* ----------------HEADER----------------*/
 .header-container {
   max-width: 1035px;
   padding: 0 15px;
@@ -74,6 +74,7 @@ body {
   color: #FF6464;
 }
 
+/*-------------------------MAIN-----------------------------*/
 .main {
   margin-top: 46px;
 }
@@ -85,6 +86,7 @@ body {
   box-sizing: content-box;
 }
 
+/*----------------------FIRST-SECTION---------------------*/
 .first-section .author-block {
   display: flex;
   padding: 76px 0;
@@ -131,6 +133,7 @@ body {
   border-color: rgb(255, 100, 100);
 }
 
+/*---------------------SECOND-SECTION------------------------*/
 .second-section {
   background-color: #EDF7FA;
   padding: 7px 0px 32px;
@@ -156,6 +159,7 @@ body {
   text-decoration: underline;
 }
 
+/*----------------------POST-----------------------*/
 .main-content .post-main {
   display: flex;
 }
@@ -211,6 +215,7 @@ body {
   margin-left: 10px;
 }
 
+/*---------------------THIRD-SECTION------------------------*/
 .third-section .title {
   font-weight: 400;
   font-size: 22px;
@@ -218,9 +223,11 @@ body {
   color: #21243D;
   margin-top: 15px;
 }
+.third-section .featured-works {
+  margin-top: 22px;
+}
 .third-section .featured-works .works {
   display: flex;
-  margin-top: 22px;
 }
 .third-section .featured-works .works .work-info {
   display: flex;
@@ -267,8 +274,44 @@ body {
   border: 1px solid #E0E0E0;
   height: 0;
   display: inline-block;
+  margin-top: 35px;
 }
 .third-section .featured-works .works img {
   margin-right: 18px;
+}
+.third-section .featured-works.two {
+  margin-top: 31px;
+}
+.third-section .featured-works.three {
+  margin-top: 31px;
+}
+
+/*---------------------FOOTER------------------------*/
+.footer {
+  margin-top: 83px;
+}
+.footer .footer-content {
+  padding: 50px 0;
+}
+.footer .footer-content .footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-content .footer-icons img {
+  margin-right: 35px;
+}
+.footer .footer-content .footer-icons img:last-child {
+  margin: 0;
+}
+.footer .footer-content .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #21243D;
+  margin-top: 26px;
 }
 /*# sourceMappingURL=style.min.css.map */

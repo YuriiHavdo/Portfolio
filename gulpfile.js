@@ -27,6 +27,25 @@ gulp.task('css', function() {
 })
 //-----------------
 
+// SASS TASK
+gulp.task('sass', function() {
+    return gulp.src('./src/scss/style.sass')
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+        errorLogToConsole: true,
+        // outputStyle: 'compressed'
+    }))
+    .on('erorr', console.error.bind(console))
+    .pipe(autoprefixer({
+        browers: ['last 2 version'],
+        cascade: false
+    }))
+    .pipe(rename({suffix: '.min'}))  
+    .pipe(sourcemaps.write('./'))    
+    .pipe(gulp.dest('./dist/css2'));
+})
+//-----------------
+
 // image jpg minimized
 gulp.task('img', function() {
     return gulp.src('./src/img/*.jpg')
