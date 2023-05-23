@@ -88,10 +88,17 @@ gulp.task('html', function() {
       .pipe(rename({suffix: '.min'}))
       .pipe(gulp.dest('dist/'))
   });
+  gulp.task('blog', function() {
+    return gulp.src('./src/html/blog.html')
+    //   .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('dist/'))
+  });
 //--------------------
   //watcher
   gulp.task('watch', function() {
       gulp.watch('./src/html/*.html',gulp.series('html'));
+      gulp.watch('./src/html/*.html',gulp.series('blog'));
       gulp.watch('./src/scss/*.scss',gulp.series('css'));
       gulp.watch('./src/img/*.jpg',gulp.series('img'));
       gulp.watch('./src/img/*.png',gulp.series('img-png'));
@@ -101,7 +108,7 @@ gulp.task('html', function() {
 
 
 
-gulp.task('default', gulp.parallel('css', 'html', 'watch'));
+gulp.task('default', gulp.parallel('css', 'html', 'watch', 'blog'));
 
 
 

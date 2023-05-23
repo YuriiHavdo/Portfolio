@@ -1,3 +1,15 @@
+$darkcolor:#21243D;
+$light:#8695A4;
+$primary:#FF6464;
+$fontW:400;
+$fontS:16px;
+$family:'Heebo';
+@mixin fonts ($fontS,$fontW,$darkcolor,$family) {
+    font-size: $fontS;
+    font-weight: $fontW;
+    color: $darkcolor;
+    font-family: $family;
+}
 /* Обнуление */
 *,
 ::before,
@@ -49,6 +61,9 @@ body {
         padding: 26px 0;
         .menu-list {
             display: flex;
+            .menu-item.active a {
+                color: $primary;
+            }
             .menu-item {
                 margin-right: 33px;
             }
@@ -63,7 +78,7 @@ body {
                 transition: all 0.3s ease 0s;
             }
             .menu-item:hover a {
-                color: #FF6464;
+                color:$primary;
               }
             }
         }
@@ -92,16 +107,12 @@ body {
                     font-weight: 700;
                     font-size: 44px;
                     line-height: 60px;
-                    color: rgb(33, 36, 61);
+                    color: $darkcolor;
                     margin-top: 12px;
                 }
                 p {
-                    font-size: 16px;
-                    font-weight: 400;
-                    color: rgb(33, 36, 61);
-                    line-height: 24px;
                     margin-top: 30px;
-                    font-family: 'Heebo';
+                    @include fonts ($fontS,$fontW,$darkcolor,$family);  
                 }
                 .button {
                     margin-top: 33px;
@@ -120,9 +131,9 @@ body {
                     border: 1px solid transparent;
                 }
                 .button:hover {
-                    color: rgb(255, 100, 100);
+                    color: $primary;
                     background: rgb(255, 255, 255);
-                    border-color:  rgb(255, 100, 100);
+                    border-color:  $primary;
                 }
         }
     }
@@ -138,10 +149,9 @@ body {
             align-items: center;
         }
         .head h5 {
-            font-weight: 400;
-            font-size: 22px;
+            @include fonts (22px,$fontW,$darkcolor,$family);
+
             line-height: 60px;
-            color: #21243D;
         }
         .head a {
             font-weight: 400;
@@ -165,9 +175,8 @@ body {
          background-color: #fff;
          max-width: 418px;
          .top-block {
-             font-weight: 700;
-             font-size: 26px;
-             line-height: 38px;
+            @include fonts(26px,700,$darkcolor,$family);
+            line-height: 38px;
          }
          .center-block {
             display: flex;
@@ -183,14 +192,14 @@ body {
                font-weight: 400;
                font-size: 18px;
                line-height: 26px;
-               color: #21243D;
+               color: $darkcolor;
                margin-right: 26px;
            }
            p {
                font-weight: 400;
                font-size: 18px;
                line-height: 26px;
-               color: #21243D;
+               color: $darkcolor;
            }
            .info {
                margin-left: 26px;
@@ -200,7 +209,7 @@ body {
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
-            color: #21243D;
+            color: $darkcolor;
             max-width: 368px;
             margin-top: 21px;
          }
@@ -219,7 +228,7 @@ body {
         font-weight: 400;
         font-size: 22px;
         line-height: 60px;
-        color: #21243D;
+        color: $darkcolor;
         margin-top: 15px;
     }
     .featured-works {
@@ -233,7 +242,7 @@ body {
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 24px;
-                    color: #21243D;
+                    color: $darkcolor;
                     margin-top: 17px;
                 }
                 .info {
@@ -257,14 +266,14 @@ body {
                     font-weight: 400;
                     font-size: 20px;
                     line-height: 29px;
-                    color: #8695A4;
+                    color: $light;
                 }
             }
-            .work-info h2{
+            .work-info h2 {
                 font-weight: 700;
                 font-size: 30px;
                 line-height: 44px;
-                color: #21243D;
+                color: $darkcolor;
             }
         }
         .lines-1 {
@@ -309,8 +318,52 @@ body {
             font-weight: 400;
             font-size: 14px;
             line-height: 21px;
-            color: #21243D;
+            color: $darkcolor;
             margin-top: 26px;
         }
+    }
+}
+/*---------------------BLOG-PAGE------------------------*/
+.blog {
+    .blog-title {
+        @include fonts (44px,700,$darkcolor,$family);
+        line-height: 60px;
+    }
+    .blog-container {
+        margin-top: 55px;
+        .subtitle {
+            @include fonts (30px,500,$darkcolor,$family);
+        }
+        .information {
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+            .line {
+                height: 21px;
+                border: 1px solid #000000;
+                margin: 0 20px;
+            }
+            .date {
+                @include fonts (20px,$fontW,$darkcolor,$family);
+                line-height: 29px;
+            }
+            .info {
+                @include fonts (20px,$fontW,$light,$family);
+                line-height: 29px;
+            }
+        }
+        .text {
+              @include fonts ($fontS,$fontW,$darkcolor,$family);
+                line-height: 23.5px;
+                margin-top: 15px;
+                max-width: 682px;
+        }
+    }
+    .lines-1 {
+        width: 100%;
+        border: 1px solid #E0E0E0;
+        height: 0;
+        display: inline-block;
+        margin-top: 29px;
     }
 }
