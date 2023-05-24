@@ -304,10 +304,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-.footer .footer-content .footer-icons img {
+.footer .footer-content .footer-icons a {
   margin-right: 35px;
 }
-.footer .footer-content .footer-icons img:last-child {
+.footer .footer-content .footer-icons a a:last-child {
   margin: 0;
 }
 .footer .footer-content .text {
@@ -321,6 +321,10 @@ body {
   margin-top: 26px;
 }
 
+#footer-blog {
+  margin-top: 53px;
+}
+
 /*---------------------BLOG-PAGE------------------------*/
 .blog .blog-title {
   font-size: 44px;
@@ -329,8 +333,11 @@ body {
   font-family: "Heebo";
   line-height: 60px;
 }
-.blog .blog-container {
+.blog .blog-container.first {
   margin-top: 55px;
+}
+.blog .blog-container {
+  margin-top: 32px;
 }
 .blog .blog-container .subtitle {
   font-size: 30px;
@@ -377,5 +384,9 @@ body {
   height: 0;
   display: inline-block;
   margin-top: 29px;
+}
+
+#wrapper {
+  max-width: 682px;
 }
 /*# sourceMappingURL=style.min.css.map */

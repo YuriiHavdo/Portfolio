@@ -304,12 +304,12 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-                img {
-                    margin-right: 35px;
-                }
-                img:last-child {
+            a {
+                margin-right: 35px;
+                a:last-child {
                     margin: 0;
                 }
+            }
         }
         .text {
             display: flex;
@@ -323,14 +323,20 @@ body {
         }
     }
 }
+#footer-blog {
+    margin-top: 53px;
+}
 /*---------------------BLOG-PAGE------------------------*/
 .blog {
     .blog-title {
         @include fonts (44px,700,$darkcolor,$family);
         line-height: 60px;
     }
-    .blog-container {
+    .blog-container.first {
         margin-top: 55px;
+    }
+    .blog-container {
+        margin-top: 32px;
         .subtitle {
             @include fonts (30px,500,$darkcolor,$family);
         }
@@ -366,4 +372,7 @@ body {
         display: inline-block;
         margin-top: 29px;
     }
+}
+#wrapper {
+    max-width: 682px;
 }
