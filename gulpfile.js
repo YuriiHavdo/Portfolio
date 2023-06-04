@@ -7,7 +7,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 //---
-
 //CSS TASK
 gulp.task('css', function() {
     return gulp.src('./src/scss/style.scss')
