@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
+const server = require('gulp-webserver');
 //---
 //CSS TASK
 gulp.task('css', function() {
@@ -105,9 +106,16 @@ gulp.task('html', function() {
   });
 //------------------
 
+gulp.task('server', function() {
+    gulp.src('dist')	// <-- your app folder
+      .pipe(server({
+        livereload: true,
+        open: true,
+        port: 3000	// set a port to avoid conflicts with other local apps
+      }));
+  });
 
-
-gulp.task('default', gulp.parallel('css', 'html', 'watch', 'blog'));
+gulp.task('default', gulp.parallel('css', 'html', 'watch', 'blog', 'server'));
 
 
 

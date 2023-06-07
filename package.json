@@ -12,7 +12,8 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^5.1.0"
+    "gulp-sass": "^5.1.0",
+    "gulp-webserver": "^0.9.1"
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
